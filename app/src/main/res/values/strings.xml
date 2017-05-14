@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomTestPager</string>
+    <string name="new_york_title">New York</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="lorem_ipsum_big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla massa magna, efficitur at justo ut, tristique vehicula eros. Sed a aliquet odio, a convallis libero. In iaculis nisi molestie porta congue. Duis tempor vulputate urna, ut fermentum enim. Pellentesque porttitor lobortis erat vitae tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</string>
+    <string name="new_york">New York</string>
+    <string name="detail_transition_name_country_name">detail_country_name</string>
+</resources>
