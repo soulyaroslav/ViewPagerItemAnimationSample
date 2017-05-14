@@ -1,6 +1,5 @@
 package steelkiwi.com.customtestpager.adapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,15 +15,13 @@ public class CountryPagerAdapter extends CustomPagerAdapter<CountryPagerAdapter.
 
     private CustomTouchListener touchListener;
 
-    public CountryPagerAdapter(CustomTouchListener touchListener) {
-        this.touchListener = touchListener;
-    }
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.pager_item_layout, parent, false);
         prepareDefaultParams(view);
-        view.setOnTouchListener(touchListener);
+        if(touchListener != null) {
+            view.setOnTouchListener(touchListener);
+        }
         return new ViewHolder(view);
     }
 
@@ -49,5 +46,9 @@ public class CountryPagerAdapter extends CustomPagerAdapter<CountryPagerAdapter.
         public ViewHolder(View itemView) {
             super(itemView);
         }
+    }
+
+    public void setTouchListener(CustomTouchListener touchListener) {
+        this.touchListener = touchListener;
     }
 }
