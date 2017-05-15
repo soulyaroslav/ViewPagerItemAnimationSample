@@ -105,9 +105,9 @@ public class CountryPresenter implements CountryContract.Presenter {
         // get width value for animation
         ValueAnimator widthValueAnimator = getWidthValueAnimator(background, startWidth, targetWidth, DELAY);
         // translate view
-        ObjectAnimator imageTranslationY = getTranslationYAnimator(background, 150);
+        ObjectAnimator imageTranslationY = getTranslationYAnimator(background, 110);
         // translate view
-        ObjectAnimator backgroundTranslationY = getTranslationYAnimator(image, -70);
+        ObjectAnimator backgroundTranslationY = getTranslationYAnimator(image, -60);
         // set all animator together
         animatorSet.playTogether(heightValueAnimator, widthValueAnimator, imageTranslationY, backgroundTranslationY);
         animatorSet.start();
